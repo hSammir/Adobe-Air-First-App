@@ -1,0 +1,22 @@
+<html> 
+<head> 
+    <title>Hello World</title> 
+    <script type="text/javascript" src="AIRAliases.js"></script> 
+	<script type="text/javascript" src="AIRMenuBuilder.js"></script>
+    <script type="text/javascript"> 
+        function appLoad(){ 
+            air.trace("Hello World"); 
+        }  
+    </script> 
+	<script type="text/javascript">
+		var windowMenu = air.ui.Menu.createFromXML('menus.xml');
+		air.ui.Menu.setAsMenu(windowMenu);
+	</script>
+</head> 
+<body onLoad="appLoad()"> 
+    <h1>Hello World</h1> 
+	<p>Halo Aplikasi ini dibuat dgn HTML </p>
+	<label>Nama</label><input type="Text">
+	<input type="button" value="Klik">
+</body> 
+</html>
